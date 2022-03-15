@@ -13,7 +13,7 @@ if __name__ == '__main__':
     dataset = []  # 原始数据集
 
     # 从数据文件中加载原始数据集
-    with open("./data/samples_c3_s1500.txt", "r") as f:
+    with open("./data/samples.txt", "r") as f:
         for line in list(f):
             dataset.append(eval(line)) if len(line) > 0 else None
         dataset = np.asarray(dataset, dtype=object)

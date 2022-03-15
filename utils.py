@@ -95,20 +95,20 @@ def showPDF(xy, pdf):
 
 
 if __name__ == '__main__':
-    is_save = False
+    is_save = False  # 是否保存到文件
 
-    categories = ['0', '1', '2']
-    mus = {
+    categories = ['0', '1', '2']  # 类别
+    mus = {  # 均值
         categories[0]: [0, 0],
         categories[1]: [10, 10],
         categories[2]: [10, 0]
     }
-    covs = {
+    covs = {  # 协方差
         categories[0]: [[1, 0], [0, 10]],
         categories[1]: [[10, 0], [0, 1]],
         categories[2]: [[3, 0], [0, 4]]
     }
-    sizes = {
+    sizes = {  # 样本数
         categories[0]: 500,
         categories[1]: 500,
         categories[2]: 500
